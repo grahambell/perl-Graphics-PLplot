@@ -1089,8 +1089,8 @@ c_plw3d(basex,basey,height,xmin,xmax,ymin,ymax,zmin,zmax,alt,az )
   PLFLT az
 
 void
-c_plwid( width )
-  PLINT width
+c_plwidth( width )
+  PLFLT width
 
 void
 c_plwind( xmin, xmax, ymin, ymax )

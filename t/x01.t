@@ -120,9 +120,9 @@ sub plot2 {
 
   # Draw the line
   plcol0( 3 );
-  plwid( 2 );
+  plwidth( 2 );
   plline( \@x, \@y );
-  plwid( 1 );
+  plwidth( 1 );
 
 }
 

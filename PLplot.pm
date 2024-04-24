@@ -158,7 +158,7 @@ use base qw/ Exporter DynaLoader /;
 			   plvpor
 			   plvsta
 			   plw3d
-			   plwid
+			   plwidth
 			   plwind
 			   plxormod
 			   plgFileDevs
