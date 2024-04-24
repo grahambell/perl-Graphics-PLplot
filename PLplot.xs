@@ -30,8 +30,8 @@ extern "C" {
 }
 #endif
 
-#include "plplot/plplotP.h"
-#include "plplot/plplot.h"
+#include "plplotP.h"
+#include "plplot.h"
 #include "arrays.h"
 char ** pack1Dchar( AV * );
 char ** pack1Dchar_sz( AV * , int * );
