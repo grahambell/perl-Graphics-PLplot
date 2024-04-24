@@ -1174,7 +1174,7 @@ plParseOpts( argv, mode )
   int status;
  PPCODE:
   /* $ARGV[0] is not the program name in perl */
-  status = plParseOpts( &ix_argv, argv, mode | PL_PARSE_NOPROGRAM );
+  status = c_plparseopts( &ix_argv, argv, mode | PL_PARSE_NOPROGRAM );
   XPUSHs( sv_2mortal(newSViv(status) ));  
   XPUSHs( newRV_noinc( (SV*)unpack1Dchar( argv, ix_argv) ));
 
