@@ -17,6 +17,8 @@ WriteMakefile(
 	      LIBS => [ $pllibs ],
 	      INC  => "$plinc",
 	      OBJECT  => 'PLplot.o arrays.o',
+	      CONFIGURE_REQUIRES => {'ExtUtils::MakeMaker' => 0,
+	                             'Alien::PLplot' => 0},
 	      PREREQ_PM => {'Alien::PLplot' => 0},
 	      'dist'      => {'COMPRESS'=>'gzip -9f', 'SUFFIX' => 'gz',
 			      'ZIP'=>'/usr/bin/zip','ZIPFLAGS'=>'-rl'},

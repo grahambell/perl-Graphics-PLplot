@@ -1,15 +1,24 @@
-# http://module-build.sourceforge.net/META-spec.html
-#XXXXXXX This is a prototype!!!  It will change in the future!!! XXXXX#
-name:         Graphics-PLplot
-version:      0.03
+---
+abstract: 'Perl interface to the PLplot plotting library'
 author:
-  - Tim Jenness, tjenness@cpan.org
-abstract:     Perl interface to PLplot graphics library
-license:      gpl
-version_from: PLplot.pm
-installdirs:  site
-requires:
+  - 'Tim Jenness <t.jenness@jach.hawaii.edu>'
 build_requires:
-  Test::More: 0
-distribution_type: module
-generated_by: ExtUtils::MakeMaker version 6.17
+  ExtUtils::MakeMaker: '0'
+configure_requires:
+  Alien::PLplot: '0'
+  ExtUtils::MakeMaker: '0'
+dynamic_config: 1
+generated_by: 'ExtUtils::MakeMaker version 7.64, CPAN::Meta::Converter version 2.150010'
+license: unknown
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: '1.4'
+name: Graphics-PLplot
+no_index:
+  directory:
+    - t
+    - inc
+requires:
+  Alien::PLplot: '0'
+version: '0.03'
+x_serialization_backend: 'CPAN::Meta::YAML version 0.018'
